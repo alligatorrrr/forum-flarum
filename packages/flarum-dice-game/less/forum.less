@@ -1,0 +1,222 @@
+
+.ZivenDiceGameContainer{
+    width: 100%;
+    padding-top: 30px;
+}
+  
+.ZivenDiceGameTitle{
+    padding-bottom:10px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.ZivenDiceGameSummary{
+    padding-bottom:20px;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+
+    span{
+        font-weight: bold;
+    }
+}
+
+.ZivenDiceGameSummaryUser{
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+
+    .username{
+        color:var(--text-color);
+    }
+    .Avatar{
+        --size: 24px;
+    }
+}
+
+.ZivenDiceGameListItemContainer{
+    padding: 10px;
+    border: 1px dashed var(--primary-color);
+    border-radius: var(--border-radius);
+    margin-bottom: 5px;
+}
+
+.ZivenDiceGameItemContainer{
+
+}
+
+.ZivenDiceGameActionContainer{
+    float: right;
+}
+
+.ZivenDiceGameResultContainer{
+    float: right;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.ZivenDiceGameResultText{
+    text-align: center;
+    height: 30px;
+}
+
+.ZivenDiceGameResultDice{
+    display: flex;
+    column-gap: 5px;
+}
+
+.ZivenDiceGameResultModalDice{
+    justify-content: center;
+    padding: 10px 0px;
+}
+
+.ZivenDiceGameResultModalDiceVs{
+    color: var(--text-color);
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.ZivenDiceGameDraw{
+    color:#bbb;
+}
+
+.ZivenDiceGameWin{
+    color:green;
+}
+
+.ZivenDiceGameLose{
+    color:red;
+}
+
+.ZivenDiceGameList{
+    margin: 0;
+    padding: 0px 0px 20px 0px;
+    list-style-type: none;
+    position: relative;
+}
+
+.ZivenDiceGameListItem{
+    display: flex;
+    column-gap: 10px;
+
+    span{
+        font-weight: bold;
+    }
+}
+
+.ZivenDiceGameResultItemContainer{
+    @media @desktop-up{
+        min-height: 55px;
+    }
+}
+
+.ZivenDiceGameListItemMobile{
+    span{
+        font-weight: bold;
+    }
+
+    @media @desktop-up{
+        display: none;
+    }
+}
+
+.ZivenDiceGameListItemDesktop{
+    span{
+        font-weight: bold;
+    }
+
+    @media @phone{
+        display: none;
+    }
+}
+
+.ZivenDiceGameUserName{
+    font-size:16px;
+    text-align:center;
+    font-weight:bold
+}
+
+.ZivenDiceGameInput{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+
+    input{
+        width: 150px;
+    }
+
+    .ZivenDiceGameInputLabel{
+        width: 100px;
+        text-align: right;
+        font-size: 16px;
+    }
+}
+
+.ZivenDiceGameDesc{
+    color:#bbb;
+}
+
+.ZivenDiceGameStartSuccess,
+.ZivenDiceGameResult{
+    font-size: 20px;
+}
+
+.ZivenDiceGame-draw{
+
+}
+
+.ZivenDiceGameResultInfo{
+
+}
+
+.ZivenDiceGameHeader{
+    padding: 20px 0px;
+}
+
+.ZivenDiceGameHeaderWithFilter{
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+
+    .Select{
+        margin-right: 15px;
+    }
+
+    select{
+        @media @phone{
+            font-size: 14px;
+        }
+    }
+}
+
+.ZivenDiceGameParticipateUserDetails{
+    padding: 0px !important;
+
+    span{
+        font-weight: normal;
+    }
+
+    summary {
+        font-weight: bold;
+        display: list-item;
+    }
+}
+
+.ZivenDiceGameParticipateUserDetails[open]>div{
+    display: flex;
+    column-gap: 10px;
+    animation-name: none !important;
+    padding: 5px 10px;
+}
+
+.Notification--zivenDiceGame{
+    .Avatar{
+        display:none;
+    }
+}
+
+.ZiveDiceGameButton--gray {background-color:#ddd;color:var(--button-color);padding-left:20px;padding-right:20px;}
+.ZiveDiceGameButton--gray:focus {background-color:#ddd;color:var(--button-color)}
+.ZiveDiceGameButton--gray:hover {background-color:#c6c6c6;}
+.ZiveDiceGameButton--gray:active {background-color:#c6c6c6;}
+.ZiveDiceGameButton--gray:disabled {background-color:#eee;}

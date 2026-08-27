@@ -1,0 +1,37 @@
+{
+    "name": "blomstra/cache-assets",
+    "description": "Allows caching js and css ahead of any browser request.",
+    "keywords": [
+        "extension",
+        "flarum", "blomstra",
+        "cache", "assets", "js", "css"
+    ],
+    "type": "flarum-extension",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Daniël Klabbers",
+            "email": "daniel@klabbers.email",
+            "homepage": "http://luceos.com"
+        }
+    ],
+    "require": {
+        "flarum/core": "^1.0.0"
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "Cache Assets",
+            "category": "other",
+            "icon": {
+                "name": "fas fa-box-open",
+                "backgroundColor": "#EBF1FD",
+                "color": "#3a98d0"
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Blomstra\\CacheAssets\\": "src/"
+        }
+    }
+}

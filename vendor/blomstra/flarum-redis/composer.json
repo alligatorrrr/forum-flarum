@@ -1,0 +1,31 @@
+{
+    "name": "blomstra/flarum-redis",
+    "description": "Adds Redis cache, sessions and queue to Flarum",
+    "keywords": [
+        "flarum", "blomstra",
+        "queue", "cache", "session", "redis"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Team Blomstra",
+            "email": "development@blomstra.net"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/blomstra/flarum-redis/issues",
+        "source": "https://github.com/blomstra/flarum-redis",
+        "forum": "https://discuss.flarum.org/d/21873"
+    },
+    "homepage": "https://blomstra.net",
+    "require": {
+        "flarum/core": "^1.0.0",
+        "illuminate/redis": "*",
+        "predis/predis": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Blomstra\\Redis\\": "src/"
+        }
+    }
+}

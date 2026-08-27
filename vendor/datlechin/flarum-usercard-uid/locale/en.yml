@@ -1,0 +1,5 @@
+datlechin-usercard-uid:
+  admin:
+
+  forum:
+    uid_text: "User ID: {uid}"

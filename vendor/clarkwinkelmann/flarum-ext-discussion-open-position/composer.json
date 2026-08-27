@@ -1,0 +1,44 @@
+{
+    "name": "clarkwinkelmann/flarum-ext-discussion-open-position",
+    "description": "Control how discussions are opened from the list",
+    "keywords": [
+        "flarum",
+        "discussion",
+        "link"
+    ],
+    "type": "flarum-extension",
+    "license": "MIT",
+    "require": {
+        "flarum/core": "^1.2"
+    },
+    "require-dev": {
+        "flarum/tags": "*"
+    },
+    "authors": [
+        {
+            "name": "Clark Winkelmann",
+            "homepage": "https://clarkwinkelmann.com/",
+            "email": "clark.winkelmann@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "source": "https://github.com/clarkwinkelmann/flarum-ext-discussion-open-position",
+        "forum": "https://discuss.flarum.org/d/31153"
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "Discussion Open Position",
+            "category": "feature",
+            "icon": {
+                "name": "fas fa-eye",
+                "backgroundColor": "#684ba6",
+                "color": "#fff"
+            },
+            "optional-dependencies": [
+                "flarum/tags",
+                "v17development/flarum-blog"
+            ]
+        }
+    }
+}

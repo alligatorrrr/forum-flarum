@@ -1,0 +1,35 @@
+.Badge--cakeday {
+    background-color: #FFD449;
+}
+
+.AnniversariesList-users {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    gap: 1rem;
+    grid-template-columns: repeat(4, auto);
+
+    &, .user {
+        display: grid;
+    }
+
+    .user {
+        grid-template-columns: 48px auto;
+        gap: 0 .5rem;
+
+        .username {
+            max-width: 100px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+
+    @media @phone {
+        grid-template-columns: repeat(2, auto);
+    }
+}
+
+.AnniversariesList-loadMore {
+    text-align: center;
+    margin-top: 1rem;
+}

@@ -1,0 +1,106 @@
+{
+    "name": "fof/byobu",
+    "description": "Well integrated, advanced private discussions.",
+    "keywords": [
+        "pm",
+        "flarum",
+        "fof",
+        "messaging",
+        "private discussions"
+    ],
+    "type": "flarum-extension",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Daniël Klabbers",
+            "email": "daniel@blomstra.net"
+        },
+        {
+            "name": "IanM",
+            "email": "ian@blomstra.net",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/FriendsOfFlarum/byobu/issues",
+        "source": "https://github.com/FriendsOfFlarum/byobu",
+        "forum": "https://discuss.flarum.org/d/4762"
+    },
+    "homepage": "https://friendsofflarum.org",
+    "funding": [
+        {
+            "type": "website",
+            "url": "https://opencollective.com/fof/donate"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "flarum/core": "^1.8.6"
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "FoF Byōbu",
+            "category": "feature",
+            "icon": {
+                "image": "resources/logo.svg",
+                "backgroundColor": "#e74c3c",
+                "backgroundSize": "90%",
+                "backgroundRepeat": "no-repeat",
+                "backgroundPosition": "center"
+            },
+            "optional-dependencies": [
+                "flarum/suspend",
+                "flarum/flags",
+                "flarum/tags",
+                "flarum/approval",
+                "v17development/flarum-support"
+            ]
+        },
+        "extiverse": {
+            "discuss": "https://discuss.flarum.org/d/4762"
+        },
+        "flarum-cli": {
+            "modules": {
+                "githubActions": true,
+                "backendTesting": true
+            }
+        }
+    },
+    "replace": {
+        "flagrow/byobu": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "FoF\\Byobu\\": "src/"
+        }
+    },
+    "require-dev": {
+        "fof/split": "*",
+        "flarum/flags": "*",
+        "flarum/phpstan": "*",
+        "flarum/testing": "^1.0.0"
+    },
+    "scripts": {
+        "analyse:phpstan": "phpstan analyse",
+        "clear-cache:phpstan": "phpstan clear-result-cache",
+        "test": [
+            "@test:unit",
+            "@test:integration"
+        ],
+        "test:unit": "phpunit -c tests/phpunit.unit.xml",
+        "test:integration": "phpunit -c tests/phpunit.integration.xml",
+        "test:setup": "@php tests/integration/setup.php"
+    },
+    "scripts-descriptions": {
+        "analyse:phpstan": "Run static analysis",
+        "test": "Runs all tests.",
+        "test:unit": "Runs all unit tests.",
+        "test:integration": "Runs all integration tests.",
+        "test:setup": "Sets up a database for use with integration tests. Execute this only once."
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "FoF\\Byobu\\Tests\\": "tests/"
+        }
+    }
+}

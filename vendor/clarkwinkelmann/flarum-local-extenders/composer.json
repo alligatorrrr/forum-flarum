@@ -1,0 +1,25 @@
+{
+    "name": "clarkwinkelmann/flarum-local-extenders",
+    "description": "Useful extenders for your local extend.php",
+    "keywords": [
+        "flarum"
+    ],
+    "license": "MIT",
+    "require": {
+        "flarum/core": "^1.2",
+        "ext-json": "*"
+    },
+    "authors": [
+        {
+            "name": "Clark Winkelmann",
+            "email": "clark.winkelmann@gmail.com",
+            "homepage": "https://clarkwinkelmann.com/",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "ClarkWinkelmann\\LocalExtenders\\": "src/"
+        }
+    }
+}

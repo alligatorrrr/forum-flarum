@@ -1,0 +1,11 @@
+/public/assets/*
+!/public/assets/.gitkeep
+/storage/*
+!/storage/.gitkeep
+config.php
+auth.json
+*.log
+composer.lock.rtf
+/packages/anonymous-posting-custom/
+/packages/lottery/
+/vendor/v17development/flarum-blog/

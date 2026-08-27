@@ -1,0 +1,164 @@
+.StoreListPage {
+    padding-top: 30px;
+    width: 100%;
+}
+
+.store-list-title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6px;
+    h2 {
+        margin: 7px;
+    }
+}
+.store-control-spacing{
+    display: flex;
+    justify-content: space-between;
+}
+
+.StoreListContainer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.store-history-page {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.store-item.invalid {
+    filter: grayscale(1);
+}
+
+.store-item {
+    background-color: var(--body-bg);
+    position: relative;
+    flex-basis: 250px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 0 2px var(--primary-color);
+    height: 295px;
+    text-align: center;
+    margin: 3px;
+    overflow: hidden;
+
+    .store-item-showcase {
+        border: 2px solid var(--primary-color);
+        position: relative;
+        height: 130px;
+        overflow: hidden;
+        transition: height 0.5s ease-in-out;
+        background-color: var(--body-bg);
+        z-index: 1;
+
+        .store-item-showcase-tip {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: var(--primary-color);
+            color: var(--body-bg);
+            padding: 0 2px 2px 2px;
+            z-index: 100;
+            transition: opacity 0.5s;
+            opacity: 1;
+        }
+    }
+
+    .store-item-showcase:hover {
+        height: 169px;
+
+        .store-item-showcase-tip {
+            opacity: 0;
+        }
+    }
+
+
+    .store-item-bottom,
+    .store-item-info {
+        background: var(--body-bg);
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        left: 0;
+        height: 36px;
+        display: flex;
+        justify-content: space-between;
+        border-radius: var(--border-radius);
+
+        .Button {
+            width: 100%;
+            border-radius: 0 0 var(--border-radius) var(--border-radius);
+        }
+        .store-item-time{
+            width: 100%;
+        }
+        .store-item-price {
+            padding: 8px 10px;
+        }
+
+        .store-item-rest {
+            padding: 8px 10px;
+        }
+    }
+
+    .edit-store-item {
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: rgba(0, 0, 0, 0.2);
+        padding: 6px 9px;
+        border-radius: 20px;
+        opacity: 0.1;
+        transition: opacity 0.5s;
+    }
+
+    .edit-store-item:hover {
+        opacity: 1;
+        cursor: pointer;
+    }
+
+    .store-item-description {
+        height: 72px;
+    }
+
+    .store-item-info.store-item-info {
+        bottom: 36px;
+        padding-right: 5px;
+        flex-wrap: wrap;
+        padding-left: 5px;
+        text-align: left;
+        height: unset;
+    }
+}
+
+
+.delete-history {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 6px 9px;
+    border-radius: 20px;
+    opacity: 0.1;
+    transition: opacity 0.5s;
+}
+
+.delete-history:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+#xypp-store-create-selector-provider_data {
+    width: 100%;
+}
+
+.query-control {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.fas-space-right{
+    margin-right: 5px;
+}

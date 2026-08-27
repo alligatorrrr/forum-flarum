@@ -1,0 +1,40 @@
+ziven-badge-shop:
+  forum:
+    bagde-shop-index-category1: 购买徽章
+    bagde-shop-index-category2: 购买头像挂件
+    bagde-shop-index-view-details: 查看
+    bagde-shop-sell-list-title: 可购买的徽章
+    bagde-shop-sell-list-empty: 没有出售的勋章
+    bagde-shop-sell-default-desc: 该徽章没有简介
+    bagde-shop-purchase-bagde: 购买
+    bagde-shop-purchase-failed-need-money: 您的[money]不足
+    bagde-shop-purchase-failed-already-have: 您已拥有该徽章
+    bagde-shop-purchase-failed-already-purchased: 您已经购买了该徽章
+    bagde-shop-purchase-text-not-for-sale: 暂不出售
+    bagde-shop-purchase-text-pruchased: 已购买
+    bagde-shop-purchase-text-subscribed: 已订阅
+    bagde-shop-purchase-text-already-have: 已拥有
+    bagde-shop-purchase-text-expired: 已过期
+    bagde-shop-purchase-type-onetime: 永久
+    bagde-shop-purchase-type-monthly: 每月
+    bagde-shop-purchase-type-yearly: 每月
+    bagde-shop-purchase-date: 购买日期：
+    bagde-shop-purchase-type: 购买类型：
+    bagde-shop-purchase-confirmation: 你确定要购买该徽章吗？
+    bagde-shop-purchase-cancel-subscription-confirmation: 你确定要取消订阅该徽章吗？
+    bagde-shop-purchase-cancel-subscription: 取消订阅
+    notifications:
+      bagde-shop-purchase-notification-label: 购买了徽章
+      bagde-shop-purchase-text: 成功购买徽章
+  admin:
+    settings:
+      bagde-shop-display-name: 商店名称
+      bagde-shop-display-name-default: 商店
+      bagde-shop-set-badge-purchase-type-onetime: 永久
+      bagde-shop-set-badge-purchase-type-monthly: 按月
+      bagde-shop-set-badge-purchase-type-yearly: 按年
+      bagde-shop-category-is-empty: 分类中没有出售的徽章
+      bagde-shop-category-for-sale: 出售的徽章分类
+      bagde-shop-category-for-sale-placeholder: 请填写在 User Badge 扩展中的分类名称
+      bagde-shop-purchase-cost: 价格：
+      bagde-shop-purchase-type: 购买类型：

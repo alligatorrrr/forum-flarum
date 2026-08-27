@@ -1,0 +1,36 @@
+{
+    "name": "ziiven/flarum-raffle-ticket",
+    "description": "Allow user to buy raffle ticket in your flarum community.",
+    "type": "flarum-extension",
+    "license": "proprietary",
+    "require": {
+        "flarum/core": "^1.6.3",
+        "antoinefr/flarum-ext-money": "*"
+    },
+    "support": {
+        "issues": "https://github.com/Ziiven/flarum-raffle-ticket/issues",
+        "source": "https://github.com/Ziiven/flarum-raffle-ticket"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "Ziven\\GuaGuaLe\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Ziven"
+        }
+    ],
+    "extra": {
+        "flarum-extension": {
+            "title": "Ziven Raffle Ticket",
+            "icon": {
+                "name": "fas fa-ticket-alt",
+                "backgroundColor": "#68238c",
+                "color": "#fff"
+            }
+        }
+    }
+}

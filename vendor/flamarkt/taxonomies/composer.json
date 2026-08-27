@@ -1,0 +1,61 @@
+{
+    "name": "flamarkt/taxonomies",
+    "description": "Taxonomies for discussions, users and products.",
+    "keywords": [
+        "flarum",
+        "flamarkt",
+        "marketplace",
+        "taxonomies"
+    ],
+    "type": "flarum-extension",
+    "license": "MIT",
+    "require": {
+        "flarum/core": "^1.2",
+        "flamarkt/backoffice": "^0.1.0",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "flarum/tags": "*"
+    },
+    "replace": {
+        "fof/taxonomies": "*"
+    },
+    "authors": [
+        {
+            "name": "Flamarkt",
+            "homepage": "https://flamarkt.org/"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/flamarkt/taxonomies/issues",
+        "source": "https://github.com/flamarkt/taxonomies",
+        "forum": "https://discuss.flarum.org/d/30499"
+    },
+    "autoload": {
+        "psr-4": {
+            "Flamarkt\\Taxonomies\\": "src/"
+        }
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "Taxonomies",
+            "category": "feature",
+            "icon": {
+                "name": "fas fa-tags",
+                "backgroundColor": "#266a13",
+                "color": "#fff"
+            },
+            "optional-dependencies": [
+                "flamarkt/core",
+                "flarum/tags",
+                "fof/transliterator",
+                "fof/user-directory",
+                "v17development/flarum-blog"
+            ]
+        },
+        "flamarkt-backoffice": {
+            "settingsInBackoffice": true,
+            "showInBackoffice": true
+        }
+    }
+}

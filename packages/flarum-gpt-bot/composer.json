@@ -1,0 +1,33 @@
+{
+    "name": "annonny/flarum-gpt-bot",
+    "description": "Use For ANNONNY",
+    "type": "flarum-extension",
+    "license": "MIT",
+    "require": {
+        "flarum/core": "^1.0"
+    },
+    "support": {
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "Annonny\\GptBot\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Annonny"
+        }
+    ],
+    "extra": {
+        "flarum-extension": {
+            "title": "gpt bot",
+            "icon": {
+                "name": "fab fa-android",
+                "backgroundColor": "#ffc4ab",
+                "color": "#fff"
+            }
+        }
+    }
+}

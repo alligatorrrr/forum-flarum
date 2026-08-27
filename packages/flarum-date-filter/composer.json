@@ -1,0 +1,32 @@
+{
+  "name": "annonny/flarum-date-filter",
+  "description": " DATE FILTER",
+  "keywords": [
+    "flarum"
+  ],
+  "type": "flarum-extension",
+  "license": "MIT",
+  "require": {
+    "flarum/core": "^1.2.0"
+  },
+  "authors": [
+    {
+        "name": "Annonny"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Annonny\\datefilter\\": "src/"
+    }
+  },
+  "extra": {
+    "flarum-extension": {
+      "title": "Date Filter",
+        "icon": {
+            "name": "fas fa-id-card",
+            "backgroundColor": "#ffc4ab",
+            "color": "#fff"
+        }
+    }
+  }
+}

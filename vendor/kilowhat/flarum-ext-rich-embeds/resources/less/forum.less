@@ -1,0 +1,95 @@
+@import 'common';
+
+.Post-body {
+    overflow: visible; // In inline mode, the hover popup goes out of the visible area
+}
+
+.rich-embed-collection {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -20px;
+
+    .rich-embed-block {
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.rich-embed-img {
+    display: inline-block;
+    position: relative;
+
+    img {
+        max-width: 100%;
+        height: auto;
+        transition: filter 0.2s;
+    }
+
+    &:hover {
+        img {
+            filter: brightness(80%);
+        }
+
+        .rich-embed-img-over {
+            opacity: 1;
+        }
+    }
+}
+
+.rich-embed-img-over {
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    padding-top: 8px;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    transition: opacity 0.2s;
+    font-size: 0.9em;
+    pointer-events: none; // Prevent selecting text which would bring up the quote popup. Also gives better access to context menu on image
+
+    > * {
+        margin-right: 8px;
+    }
+
+    .Button {
+        font-size: 1em;
+        line-height: 1em;
+        pointer-events: auto; // Still give access to the buttons
+    }
+
+    .Button--icon {
+        width: 2.5em;
+        height: 2.5em;
+        padding: 0;
+        // Use flex to work around some annoying issues where `button` and `a` don't have the icons lined up at the same height
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .Button-icon {
+            font-size: 1.2em;
+        }
+    }
+}
+
+.rich-embed-img-info {
+    border-radius: var(--border-radius);
+    color: var(--button-color);
+    background: var(--button-bg);
+    line-height: 1.2em;
+    padding: 0.1em 0.5em; // Same horizontal padding as real buttons, but smaller vertical padding to accommodate 2 lines
+}
+
+.rich-embed-img-domain {
+    display: block;
+}
+
+.rich-embed-img-mime span:not(:first-child)::before {
+    content: '/ ';
+    opacity: 0.5;
+}

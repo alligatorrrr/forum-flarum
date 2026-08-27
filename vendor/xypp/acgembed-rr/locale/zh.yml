@@ -1,0 +1,20 @@
+xypp-acgembed-rr:
+  admin:
+    settings:
+      tags:
+        label: 点击加载处理的标签
+        desc: 下面的标签将会被蒙版处理。但是不受支持的标签无法显示媒体信息
+      lazy:
+        label: 点击加载
+        desc: 视频/音频将在点击后加载
+      fetch:
+        label: 获取媒体信息
+        desc: 获取媒体信息
+      show-url:
+        label: 显示媒体链接
+        desc: 显示媒体链接
+      tip: 媒体信息将在打开了获取媒体信息开关下保存后获取
+  forum:
+    play: 点击开始播放
+    unknown-title: 来自[{0}]的媒体
+    unknown: 信息未加载，点击加载播放器或点击下面的链接

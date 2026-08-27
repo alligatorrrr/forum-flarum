@@ -1,0 +1,31 @@
+{
+    "name": "ziiven/ziven-badge-shop",
+    "description": "徽章商店插件",
+    "type": "flarum-extension",
+    "license": "MIT",
+    "require": {
+        "flarum/core": "^1.0"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "Ziven\\BadgeShop\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Ziven"
+        }
+    ],
+    "extra": {
+        "flarum-extension": {
+            "title": "Ziven Badge Shop",
+            "icon": {
+                "name": "fas fa-store",
+                "backgroundColor": "#68238c",
+                "color": "#fff"
+            }
+        }
+    }
+}

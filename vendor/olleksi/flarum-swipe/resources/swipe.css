@@ -1,0 +1,35 @@
+/**
+ * Flarum Swipe Gestures Extension Styles
+ */
+
+/* Swipe indicator for dropdowns */
+.swipe-indicator {
+    position: absolute;
+    top: 4px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 4px;
+    border-radius: 2px;
+    z-index: 1001;
+    cursor: grab;
+    pointer-events: none;
+}
+
+.swipe-indicator:active {
+    cursor: grabbing;
+}
+
+/* Гарантія для мобільних */
+@media (max-width: 768px) {
+    .swipe-indicator {
+        background-color: var(--button-bg-active) !important;
+    }
+    
+    @media (prefers-color-scheme: dark) {
+        .swipe-indicator {
+            background-color: var(--button-color) !important;
+        }
+    }
+}
+

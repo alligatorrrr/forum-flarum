@@ -1,0 +1,79 @@
+xypp-user-decoration:
+  # For more details on the format
+  # Checkout https://docs.flarum.org/extend/i18n/#appendix-a-standard-key-format
+  forum:
+    decoration-no-available: "没有可用的装扮"
+    decorations: "装扮"
+    decoration-box:
+      error: "未知类型"
+      avatar: "头像样式"
+      name: "用户名样式"
+      post: "发帖样式"
+      card: "用户卡片样式"
+      loading: "加载中"
+      closed: "已关闭"
+      no-login: "登录以查看预览"
+    decoration:
+      remove_button: "移除"
+      change_button: "修改"
+      delete_button: "删除"
+      delete_confirm: "确定删除装扮？"
+    page:
+      show-decorations: "装扮"
+    modal:
+      title: "授予装扮"
+      tip: "请选择一个装扮"
+      loading: "加载中"
+      button: "授予"
+    create: "创建装扮"
+    create-success: "创建成功"
+    create-modal:
+      edit-title: "编辑装扮#{0}"
+      edit-button: "编辑"
+      title: "创建装扮"
+      type:
+        title: "类型"
+        avatar: "头像"
+        username: "用户名"
+        post: "帖"
+        usercard: "用户卡片"
+      name: "名称"
+      desc: "描述"
+      style: "样式"
+      tip: "样式表请使用.base来选中目标元素，.element-xxx来添加新的元素"
+      button: "创建"
+      delete-button: "删除"
+    delete_confirm: "确定删除？"
+    delete-success: "删除成功"
+    user_controls:
+      offer: "授予装扮"
+  admin:
+    permissions:
+      view_decoration: "查看他人装扮"
+      delete_decoration: "删除他人装扮"
+      offer_decoration: "授予他人装扮"
+      create_decoration: "创建/编辑装扮"
+      view-all: "查看所有装扮"
+    settings:
+      username_hijack:
+        title: "用户名劫持"
+        desc: "本插件会尝试拦截原有的用户模型中的用户名方法，并在其中加入其他字符，来识别用户名/昵称属于哪个用户。如果该功能导致其他模组错误，请关闭本功能。"
+      avatar_hijack:
+        title: "头像劫持"
+        desc: "本插件会尝试拦截原有的用户模型中的头像方法，并使用自己的实现，来识别头像属于哪个用户。如果该功能导致其他模组错误，请关闭本功能。"
+      view-all:
+        title: "查看所有"
+        desc: "查看所有的装饰的权限是否生效"
+      no_decorate_class_filter:
+        title: "不装饰类名"
+        desc: "使下列类名中的头像/用户名不被装扮包装，一行一个，不需要写前面的."
+xypp-store:
+  forum:
+    type:
+      decoration: "装扮"
+    unavailable:
+      decoration:
+        dumplicate: "已拥有"
+    create-modal:
+      providers:
+        decoration: "装扮"

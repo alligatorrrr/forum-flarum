@@ -1,0 +1,935 @@
+.Header-secondary .Header-controls > .item-DecorationStore {
+    @media (min-width: @screen-tablet) {
+        .Button--flat{
+            padding: 8px 0px;
+        }
+
+        .Button-label {
+            display: none;
+        }
+
+        .Button-icon {
+            margin-right: 0;
+        }
+    }
+}
+
+.DecorationStoreSelectionList{
+  font-size:12px;
+}
+
+.DecorationStoreItemCost{
+  font-size: 18px;
+  color: var(--button-color);
+}
+
+
+.DecorationStoreItemCostDiscount{
+
+}
+
+.DecorationStoreItemDiscountDays{
+  font-size: 12px;
+  color: var(--button-color);
+}
+
+.DecorationStoreItemCostOriginal{
+  color: darkgray;
+  font-size: 12px;
+}
+
+.DecorationStoreItemSmount{
+}
+
+.DecorationStoreItemPurchaseType{
+}
+
+.DecorationPurchaseListItemContainer {
+  border: 1px dotted var(--control-color);
+  padding: 10px;
+  border-radius: var(--border-radius);
+  min-height: 100px;
+}
+
+.DecorationPurchaseListSubscribeButtonContainer{
+  padding-top: 10px;
+}
+
+.DecorationPurchaseItemAvatarImage {
+  height:80px;
+  float:right;
+}
+
+.DecorationPurchaseItemProfileBackgroundImage{
+  width:170px;
+  height:80px;
+  float:right;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: var(--border-radius);
+}
+
+.DecorationPurchaseItemUsernameColor {
+  height:80px;
+  float:right;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.DecorationStoreConfirmationText{
+  text-align:center;
+  font-size: 18px;
+  padding-bottom: 20px;
+  font-weight: bold;
+}
+
+.DecorationStoreConfirmationTextSecondary{
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.DecorationStoreConfirmationItemImage{
+  margin-bottom: 20px;
+  border: 1px dotted var(--button-color);
+  border-radius: var(--border-radius);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:10px 0px;
+}
+
+.DecorationStore-loadMore {
+  text-align: center;
+}
+
+.DecorationStoreEquipmentSlot {
+  position: relative;
+  display: flex;
+  border-radius: var(--border-radius);
+  padding: 4px;
+  min-height: 20px;
+  --size: 100px;
+  justify-content: center;
+  align-items: center;
+
+  @media @desktop-up {
+    height: 240px ;
+  }
+  @media @tablet {
+    height: 240px ;
+  }
+  @media @phone {
+    height: 220px ;
+  }
+}
+
+.DecorationStoreEquipmentSelected{
+  border: 4px solid var(--button-color);
+}
+
+.DecorationStoreEquipmentUnselected{
+  border: 4px dashed #e8ecf3;
+}
+
+.DecorationStoreEquipmentName{
+  position: absolute;
+  top: 15px;
+  font-size: 22px;
+  font-weight: bold;
+  max-width: 250px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.DecorationStoreEquipmentNameUnselected{
+  color: gray;
+}
+
+.DecorationStoreEquipmentNameSelected{
+  color: var(--button-color);
+}
+
+.DecorationStoreEquipmentImage{
+  margin-top: 45px;
+  cursor: pointer;
+}
+
+.DecorationStoreEquipmentSlotIcon{
+  --size: 100px;
+}
+
+.DecorationStoreEquipmentSlotRemove{
+  font-size: 24px;
+  position: absolute;
+  bottom: 0px;
+  color: #B72A2A;
+  right: 6px;
+  cursor: pointer;
+}
+
+.DecorationStoreEquipmentSlotPurchaseType{
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 12px;
+  color: var(--button-color);
+  opacity: 0.8;
+}
+
+.DecorationStoreGlobalContainer{
+  width: 100%;
+  padding-top:8px;
+}
+
+.DecorationStoreNavigateDropdown {
+  border: 0px;
+  background: transparent;
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--text-color);
+  padding: 0px;
+  box-shadow: none !important;
+  background-color: transparent !important;
+}
+
+.DecorationStoreNavigateOptionSelected {
+  background:rgba(200,200,200,0.2) !important;
+}
+
+.DecorationStoreIndexContainer{
+  flex: 1;
+  min-width: 0;
+
+  @media @desktop-up {
+    margin-top: 30px;
+  }
+  @media @tablet {
+    margin-top: 15px;
+  }
+  @media @phone {
+    margin-top: 15px;
+  }
+}
+.DecorationStoreEquipmentContainer{
+  margin-top: 15px;
+}
+
+.DecorationStorePurchaseButtonsContainer{
+  min-height: 45px;
+  margin-top: 15px;
+}
+
+.DecorationStoreIndexButtonsContainer{
+  min-height: 45px;
+  margin-top: 15px;
+}
+
+.DecorationStoreIndexFilterButton{
+  float: left;
+}
+
+.DecorationStoreIndexUtilButton{
+  float: right;
+}
+
+.DecorationStoreContainer {
+  position: relative;
+  border: 1px solid #d5c7c7;
+  padding: 10px;
+  cursor: pointer;
+  height: 285px;
+  border-radius: var(--border-radius);
+  color: var(--button-color);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.DecorationStoreMask {
+  border-radius: var(--border-radius);
+  padding:1em;
+  position:relative;
+}
+
+.DecorationStoreContainer:after {
+    opacity: 0.2;
+}
+
+.DecorationStoreTitle {
+  padding-bottom: 5px;
+  margin-top: -5px;
+  font-size: 20px;
+  font-weight: bold;
+  max-width: 250px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.DecorationStoreMisc {
+  padding-bottom: 5px;
+}
+
+.DecorationStoreItemInfo {
+  height: 105px;
+  overflow-y: auto;
+}
+
+.DecorationStoreDescription {
+
+}
+
+.DecorationItemAvatarImage {
+  height:100px;
+}
+
+.DecorationEquipmentItemAvatarImage {
+  height:80px;
+}
+
+.DecorationEquipmentItemUsernameColorStyle {
+  margin-top: 25px;
+  font-size:20px;
+}
+
+.DecorationEquipmentIndexProfileBackgroundImage{
+  width: 180px;
+  height: 84px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: var(--border-radius);
+  margin-top: -4px;
+}
+
+.DecorationEquipmentIndexUsernameColor{
+  font-size: 30px;
+  margin-top: -30px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.DecorationEquipmentItemProfileBackgroundImage{
+  width: 128px;
+  height: 60px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: var(--border-radius);
+  margin-top: 8px;
+}
+
+.DecorationItemPurchaseBackgroundImage{
+  width:170px;
+  height:80px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: var(--border-radius);
+}
+
+.DecorationItemProfileBackgroundImage{
+  width:170px;
+  height:80px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: var(--border-radius);
+  margin-top: 12px;
+}
+
+.DecorationStorePropertyImage{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.decorationItemUsernameColorStyle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.DecorationItemFlexCard {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.DecorationStoreLabel {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+}
+
+.DecorationItemLabel {
+  display: inline-block;
+  /*
+  position: absolute;
+  margin-top: 1px;
+  margin-left: -11px;
+  */
+  padding: 2px 8px;
+  background: green;
+  color: white;
+  font-size: 10px;
+  border-radius: var(--border-radius);
+}
+
+.DecorationStoreFiltersFlexCard {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.DecorationStoreFiltersCardsListItem.DecorationStoreFiltersCard {
+    @media @desktop-up {
+      height: 30px;
+    }
+    @media @tablet {
+      height: 30px;
+    }
+    @media @phone {
+      height: 40px;
+    }
+    margin-right: 20px;
+}
+
+.DecorationItemCardsListItem.DecorationItemCard {
+    @media @desktop-up {
+      width: 32%;
+    }
+    @media @tablet {
+      width: 32%;
+    }
+    @media @phone {
+      width: 100%;
+    }
+    height: 295px;
+}
+
+.DecorationItemCardAdjust{
+  @media @desktop-up {
+    margin-left:10px;
+  }
+  @media @tablet {
+    margin-left:10px;
+  }
+}
+
+.DecorationEquipmentListCardAdjust{
+    margin-left:4px;
+}
+
+.DecorationEquipmentContainer{
+  border: 1px dotted var(--control-color);
+  padding: 10px;
+  border-radius: var(--border-radius);
+  min-height: 150px;
+  position:relative;
+}
+
+.DecorationEquipmentUnEquipped{
+  border: 1px dotted var(--control-color);
+}
+
+.DecorationEquipmentEquipped{
+  border: 1px solid var(--control-color);
+}
+
+.DecorationEquipmentItemTitle{
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--button-color);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+
+  @media @desktop-up {
+    max-width: 170px;
+  }
+  @media @tablet {
+    max-width: 170px;
+  }
+  @media @phone {
+    max-width: 155px;
+  }
+}
+
+.DecorationEquipmentPropertyImage{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.DecorationPurchaseItem{
+  padding-top:5px;
+}
+
+.DecorationPurchaseMiscButtons{
+  padding-top:10px;
+}
+
+.DecorationPurchaseItemTitle{
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--button-color);
+  max-width: 250px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: inline-block;
+}
+
+.DecorationPurchasePropertyImage{
+  text-align: center;
+}
+
+.DecorationPageHeaderContainer {
+  display:flex;
+}
+
+.DecorationPageHeaderTextContainer {
+  font-size: 24px;
+  font-weight: bold;
+  display:inline-block;
+  padding-right: 10px;
+}
+
+.DecorationPageHeaderButtonContainer {
+  position: absolute;
+  @media @desktop-up {
+    right: 32px;
+  }
+  @media @tablet {
+    right: 15px;
+  }
+  @media @phone {
+    right: 15px;
+  }
+}
+
+.DecorationEquipmentFlexCard {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.DecorationEquipmentCardsListItem.DecorationEquipmentCard {
+    @media @desktop-up {
+      width: 32%;
+      height: 250px;
+    }
+    @media @tablet {
+      width: 32%;
+      height: 250px;
+    }
+    @media @phone {
+      width: 100%;
+      height: 230px;
+    }
+}
+
+.DecorationPurchaseFlexCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.DecorationPurchaseCardsListItem.DecorationPurchaseCard {
+    @media @desktop-up {
+      width: 32%;
+      height: 280px;
+    }
+    @media @tablet {
+      width: 32%;
+      height: 280px;
+    }
+    @media @phone {
+      width: 100%;
+      height: 260px;
+    }
+}
+
+.DecorationEquipmentListFlexCard {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.DecorationEquipmentListCardsListItem.DecorationEquipmentListCard {
+  @media @desktop-up {
+    width: 32.8%;
+  }
+  @media @tablet {
+    width: 32.8%;
+  }
+  @media @phone {
+    width: 49.4%;
+  }
+  height: 154px;
+}
+
+.DecorationEquipmentListMiscButtons{
+  right: 6px;
+  position: absolute;
+  bottom: 6px;
+}
+
+.DecorationEquipmentSubscriptionInfo{
+  left: 6px;
+  position: absolute;
+  bottom: 6px;
+}
+
+.CardsListItem {
+    position: relative;
+    border-radius: 0.5rem;
+    -webkit-box-shadow: 0 6px 18px rgba(14, 21, 47, 0.1),0 -2px 6px rgba(14, 21, 47, 0.02);
+    box-shadow: 0 6px 18px rgba(14, 21, 47, 0.1),0 -2px 6px rgba(14, 21, 47, 0.02);
+}
+
+.CardsListItem {
+    display: block;
+    margin-bottom: 1.5rem;
+    background: white;
+    overflow: visible;
+    position: relative;
+}
+
+.DecorationStoreRibbon {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  top: -32px;
+  right: -32px;
+  scale: 0.66;
+}
+
+.DecorationStoreRibbonContent {
+  left: -25px;
+  top: 30px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  display: block;
+  width: 225px;
+  padding: 4px 0;
+  font-size: 16px;
+  background-color: #00aaa0;
+  color: #fff;
+  text-shadow: 0 1px 1px rgba(0,0,0,.2);
+  text-transform: uppercase;
+  text-align: center;
+  border: 2px dotted #fff;
+  outline : 5px solid  #f5cd79;
+}
+
+.DecorationStoreRibbon::before {
+  top: 0;
+  left: 7px;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  position: absolute;
+  z-index: -1;
+  content: '';
+  display: block;
+  border: 5px solid #f19066;
+  box-sizing: content-box;
+}
+
+.DecorationStoreRibbon::after {
+    bottom: 7px;
+    right: 0;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    position: absolute;
+    z-index: -1;
+    content: '';
+    display: block;
+    border: 5px solid #f19066;
+}
+
+@-webkit-keyframes DecorationStoreLabelFlow {
+  0% { left:-20px;opacity: 0;}
+  50% {left:100px;opacity: 0.3;}
+    100%{ left:180px;opacity: 0;}
+}
+@keyframes DecorationStoreLabelFlow {
+  0% { left:-20px;opacity: 0;}
+  50% {left:100px;opacity: 0.3;}
+    100%{ left:180px;opacity: 0;}
+}
+
+.DecorationStoreLabelGlow{
+background: rgb(255,255,255); width:40px; height:100%; z-index:999; position:absolute;-webkit-animation: DecorationStoreLabelFlow 1.5s linear infinite;-moz-animation: DecorationStoreLabelFlow 1.5s linear infinite;-webkit-transform: skew(20deg);
+     -moz-transform: skew(20deg);
+       -o-transform: skew(20deg);background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 1%, rgba(255,255,255,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,0)), color-stop(1%,rgba(255,255,255,0)), color-stop(100%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,0) 1%,rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,0) 1%,rgba(255,255,255,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,0) 1%,rgba(255,255,255,1) 100%); /* IE10+ */
+background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,0) 1%,rgba(255,255,255,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */ border-left:1px solid #fff;}
+
+
+.decorationButton--green {background-color:#b4f1af;color:#33722d;padding-left:20px;padding-right:20px;}
+.decorationButton--green:focus {background-color:#b4f1af;color:#33722d}
+.decorationButton--green:hover {background-color:#a0ed99;}
+.decorationButton--green:active {background-color:#8be984;}
+.decorationButton--green:disabled {background-color:#b4f1af;}
+
+.decorationButton--yellow {background-color:#fbbc04;color:#fff;padding-left:20px;padding-right:20px;}
+.decorationButton--yellow:focus {background-color:#fbbc04;color:#fff}
+.decorationButton--yellow:hover {background-color:#e2a904;}
+.decorationButton--yellow:active {background-color:#c99603;}
+.decorationButton--yellow:disabled {background-color:#fbbc04;}
+
+.decorationButton--gray {background-color:#ddd;color:var(--button-color);padding-left:20px;padding-right:20px;}
+.decorationButton--gray:focus {background-color:#ddd;color:var(--button-color)}
+.decorationButton--gray:hover {background-color:#c6c6c6;}
+.decorationButton--gray:active {background-color:#c6c6c6;}
+.decorationButton--gray:disabled {background-color:#eee;}
+
+.decorationButton--red {background-color:#b72a2a;color:var(--button-primary-color);padding-left:20px;padding-right:20px;}
+.decorationButton--red:focus {background-color:#b72a2a;color:var(--button-primary-color)}
+.decorationButton--red:hover {background-color:#a22525;}
+.decorationButton--red:active {background-color:#a22525;}
+.decorationButton--red:disabled {background-color:#b72a2a;}
+
+.decorationButton--iconOnly{
+  padding: 2px 6px;
+  .Button-icon{
+    margin-right:0px;
+  }
+}
+
+.UserCardDecorationProfileBackground{
+    background-image: var(--decoration-profileBackground) !important;
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+
+
+/* ---------------------- */
+/*     Text Effects       */
+/* ---------------------- */
+
+.decorationStoreColorText1 {
+    background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: decorationStoreColorText1Animation 6s ease-in-out infinite;
+    background-size: 400% 100%;
+}
+
+@keyframes decorationStoreColorText1Animation {
+    0%,100% { -position: 0 0; }
+    50% { background-position: 100% 0; }
+}
+
+/* ---------------------- */
+/* ---------------------- */
+
+.decorationStoreColorText2{
+  background-image: linear-gradient(
+    -225deg,
+    #333604 0%,
+    #be9049 29%,
+    #ff8a13 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: decorationStoreColorText2Animation 2s linear infinite;
+  display: inline-block;
+}
+
+@keyframes decorationStoreColorText2Animation {
+  to {
+    background-position: 200% center;
+  }
+}
+
+/* ---------------------- */
+/* ---------------------- */
+.decorationStoreColorText3 {
+  background: linear-gradient(219deg,
+    #186cb8 19%,
+    transparent 19%,transparent 20%,
+    #2a9a9f 20%, #2a9a9f 39%,
+    transparent 39%,transparent 40%,
+    #f1b211 40%,#f1b211 59% ,
+    transparent 59%,transparent 60%,
+    #e83611 60%, #e83611 79%,
+    transparent 79%, transparent 80%,
+    #f9002f 80%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* ---------------------- */
+/* ---------------------- */
+
+.decorationStoreColorText4 { 
+ color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: fadeInEffect 4s ease-in infinite;
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+
+  @keyframes fadeInEffect {
+    from { color: transparent; }
+    to { color: #87c38f; } /* 绿色 */
+}
+.decorationStoreColorText5 { 
+   color: transparent;
+  background: linear-gradient(45deg, #cdb4db, #ffafcc, #a2d2ff);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: elegantTextGlow 4s ease-in-out infinite;
+  text-shadow: 1px 1px 2px #cdb4db;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+@keyframes elegantTextGlow {
+  0%, 100% {
+    background-position: 0 0;
+    text-shadow: 1px 1px 2px #cdb4db;
+  }
+  50% {
+    background-position: 100% 0;
+    text-shadow: 1px 1px 2px #a2d2ff;
+  }
+}
+.decorationStoreColorText6 { color: transparent;
+  background: linear-gradient(to right, #ff0000, #0000ff); /* 从红色到蓝色的渐变 */
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: textGlow 6s ease-in-out infinite;
+}
+
+@keyframes textGlow {
+  0% {
+    background-position: 0 0;
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.7); /* 红色阴影 */
+  }
+  50% {
+    background-position: 100% 0;
+    text-shadow: 0 0 20px rgba(0, 0, 255, 1); /* 蓝色阴影 */
+  }
+  100% {
+    background-position: 200% 0;
+    text-shadow: 0 0 30px rgba(255, 0, 0, 1); /* 更亮的红色阴影 */
+  }}
+.decorationStoreColorText7 {color: green;}
+.decorationStoreColorText8 {color: darkcyan;}
+.decorationStoreColorText9 {color: blue;}
+.decorationStoreColorText10 {color: purple;}
+.decorationStoreColorText11 {color: pink;}
+.decorationStoreColorText12 {color: lightskyblue;}
+
+ .decorationStoreColorText13 {
+  color: #4a7729; /* 淡绿色文字，让人想到新芽和嫩叶 */
+  text-shadow:
+    1px 1px 0px #e0f7da, /* 非常浅的绿色阴影，提亮效果 */
+    2px 2px 5px #fbdff2, /* 柔和的橙粉色阴影，温暖如春日阳光 */
+    -1px -1px 2px #fcebfc; /* 淡黄色阴影，给人以阳光照耀的感觉 */
+}
+
+
+.decorationStoreColorText14 {
+ color: transparent;
+  background: linear-gradient(45deg, #87c38f, #619b8a, #38a3a5);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: smoothFlashEffect 8s ease-in-out infinite;
+  text-shadow: 1px 1px 2px #87c38f;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+@keyframes smoothFlashEffect {
+  0%, 10% { color: #fff; } /* 开始时完全透明 */
+  20%, 40% { color: #87c38f; }    /* 渐渐显现蓝绿色 */
+  50%, 100% {                     /* 蓝绿色渐变闪烁效果 */
+    background-position: 0 0;
+    color: #38a3a5;
+  }
+}
+
+.decorationStoreColorText16 {
+  color: transparent;
+  background: linear-gradient(to right, #ff0000, #0000ff); /* 从红色到蓝色的渐变 */
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: textGlow 6s ease-in-out infinite;
+}
+
+@keyframes textGlow {
+  0% {
+    background-position: 0 0;
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.7); /* 红色阴影 */
+  }
+  50% {
+    background-position: 100% 0;
+    text-shadow: 0 0 20px rgba(0, 0, 255, 1); /* 蓝色阴影 */
+  }
+  100% {
+    background-position: 200% 0;
+    text-shadow: 0 0 30px rgba(255, 0, 0, 1); /* 更亮的红色阴影 */
+  }
+}
+.decorationStoreColorText15 {
+  color: transparent;
+  background: linear-gradient(45deg, #cdb4db, #ffafcc, #a2d2ff);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: elegantTextGlow 4s ease-in-out infinite;
+  text-shadow: 1px 1px 2px #cdb4db;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+@keyframes elegantTextGlow {
+  0%, 100% {
+    background-position: 0 0;
+    text-shadow: 1px 1px 2px #cdb4db;
+  }
+  50% {
+    background-position: 100% 0;
+    text-shadow: 1px 1px 2px #a2d2ff;
+  }
+}

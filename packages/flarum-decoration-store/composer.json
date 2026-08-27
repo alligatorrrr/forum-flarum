@@ -1,0 +1,36 @@
+{
+    "name": "ziiven/flarum-decoration-store",
+    "description": "A Flarum extension. Add decoration store to the forum where user can purchase avatar frame, profile background, username color etc.",
+    "type": "flarum-extension",
+    "license": "proprietary",
+    "require": {
+        "flarum/core": "^1.4.0",
+        "antoinefr/flarum-ext-money": "*"
+    },
+    "support": {
+        "issues": "https://github.com/Ziiven/flarum-decoration-store/issues",
+        "source": "https://github.com/Ziiven/flarum-decoration-store"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "Ziven\\decorationStore\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Ziven"
+        }
+    ],
+    "extra": {
+        "flarum-extension": {
+            "title": "Ziven Decoration Store",
+            "icon": {
+                "name": "fas fa-store",
+                "backgroundColor": "#68238c",
+                "color": "#fff"
+            }
+        }
+    }
+}

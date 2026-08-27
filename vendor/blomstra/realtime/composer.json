@@ -1,0 +1,85 @@
+{
+    "name": "blomstra/realtime",
+    "description": "Step up to make your Flarum forum realtime.",
+    "keywords": [
+        "extension",
+        "flarum",
+        "blomstra",
+        "realtime",
+        "typing indicator",
+        "websocket"
+    ],
+    "support": {
+        "email": "helpdesk@blomstra.net",
+        "forum": "https://blomstra.community/t/ext-realtime"
+    },
+    "type": "flarum-extension",
+    "license": "PROPRIETARY",
+    "authors": [
+        {
+            "name": "Team Blomstra",
+            "email": "development@blomstra.net",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "flarum/core": "^1.7.0",
+        "plesk/ratchetphp": "^1.0",
+        "pusher/pusher-php-server": "^7.2.0"
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "Realtime",
+            "category": "feature",
+            "icon": {
+                "image": "resources/assets/logo.svg",
+                "backgroundColor": "#E3E7F1",
+                "backgroundSize": "100%",
+                "backgroundRepeat": "no-repeat",
+                "backgroundPosition": "center"
+            },
+            "optional-dependencies": [
+                "clarkwinkelmann/flarum-ext-first-post-approval",
+                "flarum/approval",
+                "flarum/flags",
+                "flarum/lock",
+                "flarum/subscriptions",
+                "fof/follow-tags",
+                "fof/gamification",
+                "fof/reactions"
+            ]
+        },
+        "flarum-cli": {
+            "modules": {
+                "githubActions": true
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Blomstra\\Realtime\\": "src/"
+        }
+    },
+    "conflict": {
+        "flarum/pusher": "*",
+        "kyrne/websocket": "*"
+    },
+    "scripts": {
+        "analyse:phpstan": "phpstan analyse",
+        "clear-cache:phpstan": "phpstan clear-result-cache"
+    },
+    "scripts-descriptions": {
+        "analyse:phpstan": "Run static analysis"
+    },
+    "require-dev": {
+        "fof/best-answer": "*",
+        "flarum/lock": "*",
+        "flarumite/simple-discussion-views": "*",
+        "flarum/likes": "*",
+        "flarum/flags": "*",
+        "fof/reactions": "*",
+        "fof/gamification": "*",
+        "flarum/phpstan": "*"
+    }
+}

@@ -1,0 +1,34 @@
+{
+  "name": "ppshobi/psonic",
+  "description": "PHP client for Sonic Search Engine",
+  "type": "library",
+  "keywords": [
+    "sonic",
+    "auto suggestion",
+    "psonic",
+    "search engine"
+  ],
+  "require": {
+    "php": "^7.3|^8.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^7.0|^9.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Psonic\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Shobi P P",
+      "email": "ppshobi@gmail.com"
+    }
+  ]
+}

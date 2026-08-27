@@ -1,0 +1,49 @@
+@import 'common';
+
+.rich-embed-settings-preview {
+    float: right;
+    width: 600px;
+    height: 500px;
+    max-width: 100%;
+    border: 5px solid #aaa;
+    padding: 20px;
+
+    a {
+        text-decoration: none; // Not needed in forum frontend but necessary for admin
+    }
+
+    h3 {
+        margin-top: 0;
+    }
+}
+
+.rich-embed-settings-group {
+    display: flex;
+    margin-bottom: 20px;
+
+    .FormControl {
+        flex-grow: 1;
+        margin-right: 10px;
+    }
+
+    // Don't use the primary class as it would remove the icon
+    .Button {
+        .Button--color-auto('button-primary');
+    }
+}
+
+.kilowhat-rich-embeds-Page textarea {
+    // Apply same max width as Flarum inputs
+    max-width: 400px;
+}
+
+.rich-embeds-site-specific {
+    margin-top: 50px;
+}
+
+.rich-embed-site-section {
+    border-top: 2px solid #dedede;
+    padding-top: 20px;
+    font-size: 1.3em;
+    color: #666;
+}

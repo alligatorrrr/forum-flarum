@@ -1,0 +1,42 @@
+{
+    "name": "justoverclock/auto-post-badge-pro",
+    "description": "Auto Posts Badge PRO",
+    "keywords": [
+        "auto badge",
+        "badge",
+        "post badge pro",
+        "reputation",
+        "reputation system"
+    ],
+    "type": "flarum-extension",
+    "license": "0BSD",
+    "require": {
+        "flarum/core": "^1.0.0"
+    },
+    "require-dev": {
+        "flarum/testing": "^1.0.0"
+    },
+    "authors": [
+        {
+            "name": "Marco Colia",
+            "email": "info@flarum.it",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Justoverclock\\AutoPostBadge\\": "src/"
+        }
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "Auto Post Badge PRO",
+            "category": "",
+            "icon": {
+                "name": "far fa-id-badge",
+                "backgroundColor": "purple",
+                "color": "white"
+            }
+        }
+    }
+}

@@ -1,0 +1,49 @@
+.acgembed-rr-cover{
+    position: absolute;
+    left: 0;
+    top: 0;
+    text-align: center;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center stretch safe;
+    background: #00000080;
+    color: white;
+    border: #1e88e5 3px dashed;
+    border-radius: 5px;
+}
+
+.acgembed-rr-cover .title{
+    font-weight: bold;
+}
+.acgembed-rr-cover .desc{
+    font-size: small;
+    margin: 2px 14px;
+    text-align: left;
+}
+.acgembed-rr-cover .desc::before{
+    font-size: small;
+    content:" ";
+    display: inline-block;
+    width: 26px;
+}
+.acgembed-rr-cover .start{
+    text-decoration: underline;
+    margin-top: 10px;
+}
+.acgembed-rr-cover .bg{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    filter: blur(20px) brightness(0.4);
+    background-size: cover;
+}
+.acgembed-covered{
+    transition: filter 0.5s;
+    filter: blur(20px);
+    border-radius: 5px;
+}

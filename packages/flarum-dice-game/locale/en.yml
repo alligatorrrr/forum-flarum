@@ -1,0 +1,55 @@
+ziven-dice-game:
+  forum:
+    dice-game: Dice Game
+    confirm: Confirm
+    cancel: Cancel
+    close: Close
+    challenge-game: Challenge
+    challenged-game: Challenged
+    challenge-game-result: Result
+    challenge-game-result-win: Challenge Won
+    challenge-game-result-win-info: You've earned {money}
+    challenge-game-result-lose: Challenge Lost
+    challenge-game-result-lose-info: You've lost {money}
+    challenge-game-result-draw: Draw
+    challenge-game-result-draw-info: ""
+    start-game: Create Game
+    start-game-success: 创建游戏成功
+    start-game-info: "You have: {money} Minimum wage: {wager}"
+    start-game-max-challenge: "* Max challenge quantity is {quantity}"
+    challenge-game-info: "You have: {money} Challenge Cost: {wager}"
+    challenge-game-info-insufficient-fund: Insufficient Fund
+    return-game-list: Return
+    game-ended: Game Ended
+    game-played: You have challenged this game
+    host-wager: Wage
+    challenge-quantity: Quantity
+    recent-result: Recent result
+    win-count: "Won count: "
+    defeat-count: "Lost count: "
+    money-count: "Money: "
+    item-id: "ID: "
+    item-game-id: "Game ID: "
+    item-host: "Host: "
+    item-wager: "Wage: "
+    item-createAt: "Created at: "
+    item-challenge-createAt: "Challenged at: "
+    item-dice: "Dice: "
+    item-defeat: "Defeat count: "
+    item-settlement: "Settlement: "
+    item-challenged-users: Challenged Users
+    load-more: Load More
+    list-empty: The list is empty
+    notification-ziven-dice-game: Dice game settlement notify
+    notification-game-content: Dice Game Settelment
+    notification-game-excerpt: "ID: {GameID} | Challenge Quantity: {challengeCount} | Win Count: {defeatCount} | Balance: {balance}"
+    filter-item-recent-game: My hosted game
+    filter-item-recent-result: My challenged game
+    save-error: Save Error
+    save-error-insufficent-fund: Insufficient Fund
+  admin:
+    settings:
+      maxChallengeCount: Max Challenge Count
+      minChallengeWager: Minimum Challenge Wage
+    permission:
+      allow-dice-game: Allow play dice game

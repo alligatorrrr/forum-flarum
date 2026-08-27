@@ -1,0 +1,20 @@
+xypp-acgembed-rr:
+  admin:
+    settings:
+      tags:
+        label: Processed by Click To Load
+        desc: These labels will be processed and will play after click
+      lazy:
+        label: Click To Load
+        desc: Videos/Audios will play after click
+      fetch:
+        label: Fetch Media Info
+        desc: Fetch media info
+      show-url:
+        label: Show Media URL
+        desc: Show media URL
+      tip: Media info will be fetched after post was saved with option Fetch Media Info enabled
+  forum:
+    play: Click to Play
+    unknown-title: Media from [{0}]
+    unknown: No data loaded, click to Load or Click Link to Access.

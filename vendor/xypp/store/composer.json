@@ -1,0 +1,62 @@
+{
+    "name": "xypp/store",
+    "description": "Add a basic store framework to be extend by other extensions.",
+    "keywords": [
+        "flarum"
+    ],
+    "type": "flarum-extension",
+    "license": "MIT",
+    "require": {
+        "php": ">=8.0",
+        "flarum/core": "^1.2.0",
+        "antoinefr/flarum-ext-money": "*"
+    },
+    "authors": [
+        {
+            "name": "小鱼飘飘",
+            "email": "z@xypp.cc",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Xypp\\Store\\": "src/"
+        }
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "Store",
+            "category": "feature",
+            "icon": {
+                "name": "fas fa-store",
+                "color": "#ffffff",
+                "backgroundColor": "#f44336"
+            }
+        },
+        "flarum-cli": {
+            "modules": {
+                "admin": true,
+                "forum": true,
+                "js": true,
+                "jsCommon": true,
+                "css": true,
+                "locale": true,
+                "gitConf": true,
+                "githubActions": true,
+                "prettier": true,
+                "typescript": true,
+                "bundlewatch": false,
+                "backendTesting": true,
+                "editorConfig": true,
+                "styleci": true
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload-dev": {
+        "psr-4": {
+            "Xypp\\Store\\Tests\\": "tests/"
+        }
+    }
+}

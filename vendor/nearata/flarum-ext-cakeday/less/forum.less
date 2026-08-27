@@ -1,0 +1,38 @@
+.Badge--cakeday {
+  background-color: #FFD449;
+}
+
+.NearataCakeday {
+  .users {
+    display: grid;
+    gap: .5rem;
+    grid-template-columns: repeat(5, 1fr);
+
+    @media @phone {
+      grid-template-columns: repeat(2, auto);
+    }
+  }
+
+  .AnniversariesListItem {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 48px 1fr;
+    gap: .5rem;
+
+    .avatar {
+      max-width: 48px;
+    }
+
+    .details .username {
+      max-width: 100px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+
+  .loadMore {
+    text-align: center;
+    margin-top: 1rem;
+  }
+}

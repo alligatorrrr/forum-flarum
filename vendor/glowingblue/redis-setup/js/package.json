@@ -1,0 +1,21 @@
+{
+  "name": "@glowingblue/redis-setup",
+  "version": "0.0.0",
+  "private": true,
+  "prettier": "@glowingblue-dev/prettier-config",
+  "dependencies": {
+    "flarum-webpack-config": "^2.0.0",
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2"
+  },
+  "devDependencies": {
+    "@glowingblue-dev/prettier-config": "^1.0.0",
+    "prettier": "^2.6.1"
+  },
+  "scripts": {
+    "dev": "webpack --mode development --watch",
+    "build": "webpack --mode production",
+    "format": "prettier --write src",
+    "format-check": "prettier --check src"
+  }
+}

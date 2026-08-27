@@ -1,0 +1,63 @@
+{
+    "name": "xypp/user-decoration",
+    "description": "Add decoration for user avatar/name/card/post.",
+    "keywords": [
+        "flarum"
+    ],
+    "type": "flarum-extension",
+    "license": "MIT",
+    "require": {
+        "flarum/core": "^1.2.0"
+    },
+    "require-dev": {
+        "xypp/store": "*",
+        "flarum/mentions": "^1.8"
+    },
+    "authors": [
+        {
+            "name": "小鱼飘飘",
+            "email": "z@xypp.cc",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Xypp\\UserDecoration\\": "src/"
+        }
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "User Decoration",
+            "category": "feature",
+            "icon": {
+                "name": "fas fa-brush",
+                "color": "#ec407a",
+                "backgroundColor": "#ffebee"
+            },
+            "optional-dependencies": [
+                "xypp/store",
+                "flarum/mentions"
+            ]
+        },
+        "flarum-cli": {
+            "modules": {
+                "admin": true,
+                "forum": true,
+                "js": true,
+                "jsCommon": true,
+                "css": true,
+                "locale": true,
+                "gitConf": true,
+                "githubActions": true,
+                "prettier": true,
+                "typescript": true,
+                "bundlewatch": false,
+                "backendTesting": true,
+                "editorConfig": true,
+                "styleci": true
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

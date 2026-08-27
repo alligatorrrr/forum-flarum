@@ -1,0 +1,41 @@
+{
+    "name": "datlechin/flarum-usercard-uid",
+    "description": "Show the user id on the usercard.",
+    "keywords": [
+        "flarum",
+        "flarum-extension"
+    ],
+    "type": "flarum-extension",
+    "license": "MIT",
+    "require": {
+        "flarum/core": "^1.0.0"
+    },
+    "authors": [
+        {
+            "name": "Ngo Quoc Dat",
+            "email": "datlechin@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "source": "https://github.com/datlechin/flarum-scroll-buttons",
+        "forum": "https://discuss.flarum.org/d/29781"
+    },
+    "homepage": "https://ngoquocdat.com",
+    "autoload": {
+        "psr-4": {
+            "Datlechin\\UserCardUID\\": "src/"
+        }
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "UserCard UID",
+            "category": "feature",
+            "icon": {
+                "name": "fas fa-id-card",
+                "backgroundColor": "#D3241C",
+                "color": "#fff"
+            }
+        }
+    }
+}

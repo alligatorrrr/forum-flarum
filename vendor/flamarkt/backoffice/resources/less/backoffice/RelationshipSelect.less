@@ -1,0 +1,97 @@
+.RelationshipSelect {
+    position: relative; // So we can place the dropdown menu
+}
+
+.RelationshipSelect-FakeInput {
+    padding-top: 0;
+    padding-bottom: 0;
+    overflow: hidden;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    input {
+        display: inline;
+        outline: none;
+        margin: -2px 0; // Go above the parent .FormControl to preserve same height
+        border: 0 !important;
+        padding: 0;
+        flex: 1;
+        background: transparent !important;
+    }
+
+    // Same effect as .FormControl:focus
+    .focused & {
+        background-color: var(--body-bg);
+        color: var(--text-color);
+        border-color: var(--primary-color);
+    }
+}
+
+.RelationshipSelect-Selected {
+    cursor: not-allowed;
+    margin-top: 2px;
+    margin-right: 5px;
+    padding: 3px 6px;
+    background: #f0f0f0;
+    border-radius: @border-radius;
+
+    &:last-of-type {
+        margin-right: 10px;
+    }
+}
+
+.RelationshipSelect-Dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    display: block;
+    overflow: auto;
+    max-height: 50vh;
+
+    .direction-up & {
+        top: auto;
+        bottom: 100%;
+    }
+
+    @media @phone {
+        max-height: none;
+    }
+}
+
+.RelationshipSelect-Dropdown-Item {
+    padding: 7px 20px;
+    overflow: hidden;
+    cursor: pointer;
+
+    &.active {
+        background: @control-bg;
+    }
+
+    // Highlight
+    mark {
+        font-weight: bold;
+        background: none;
+        box-shadow: none;
+        color: inherit;
+    }
+}
+
+.UserRelationshipSelect {
+    // Prevent the input from spanning too many lines if avatar and username split
+    .RelationshipSelect-Selected {
+        white-space: nowrap;
+    }
+
+    .Avatar {
+        .Avatar--size(24px);
+        margin-right: 5px;
+    }
+
+    .Avatar, .username {
+        vertical-align: middle;
+    }
+}

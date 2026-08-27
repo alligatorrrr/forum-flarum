@@ -1,0 +1,91 @@
+xypp-store:
+  forum:
+    time_segs: "日|时|分"
+    store: 新月饭店
+    purchase-history: 已购商品
+    create: 创建商品
+    purchase: 购买
+    edit_button: 编辑
+    show_case: 橱窗
+    price_free: 免费
+    provider:
+      all: 所有
+      error:
+        title: 未知商品提供者
+        no-preview: "没有预览"
+    unavailable:
+      common:
+        unknown: "无法购买此商品"
+        no_rest: "没有剩余"
+    create-modal:
+      title: 创建商品
+      name: 商品名
+      desc: 描述
+      price: 价格
+      provider: 商品提供者
+      provider_data: 商品提供者数据
+      use_cnt: 可用次数
+      expire_time: 过期时间
+      expire_time_tip: "留空表示无限期，否则填写生效时间（秒数）"
+      rest_cnt: 剩余数量/总量
+      rest_cnt_tip: "留空表示无限量"
+      edit-title: 编辑物品#{0}
+      edit-button: 编辑
+      button: 创建
+      success: 成功
+      confirm_delete: "确定删除这件商品吗?"
+      delete-button: 删除商品
+      providers:
+        unknown: "选择商品提供者"
+        unknown_data: "需要选择提供者"
+        no_select_data: "选择提供者数据"
+        special_data: "数据已选择"
+      provider_data_error: "请选择提供者和数据"
+      provider_data_default: "默认数据"
+    purchase-confirm: "确定购买吗?"
+    item:
+      rest_cnt: "库存{0}件"
+      use_cnt: "可使用{0}次"
+      expire: 有效期{0}
+      no_available: "没有可用的商品"
+      infinity_count: 可以无限购买
+      not_found: "未找到该商品"
+    history:
+      no_record: "无已购项目"
+      delete_button: 删除已购项目
+      confirm_delete: 确定删除这件你购买的商品吗？
+      title: 已购项目
+      use: 使用
+      rest_cnt: "还可以使用{0}次"
+      infinity_use: 可以无限使用
+      expire: 在{0}后过期
+      forever: 永久
+      confirm_use: "确定使用吗?"
+      unable_to_use: "该物品不可以使用"
+      not_found: "未找到该记录"
+    use_result:
+      success: "成功"
+      fail:
+        unknown: "未知错误"
+        error: "使用物品时发生错误"
+        not_enough: "物品数量不足"
+        cannot: "无法使用该物品"
+        fail_expire: "尝试过期物品时发生错误"
+        id_not_found: "物品ID未找到"
+        expired: "物品已过期"
+    purchase_result:
+      success: "成功"
+      fail:
+        unknown: "未知错误"
+        not_enough_item: "物品数量不足"
+        cannot: "无法购买该物品"
+        not_enough_money: "货币不足"
+    edit-result:
+      fail:
+        not-found: "未找到物品"
+  admin:
+    permissions:
+      add-item: "添加商品"
+      remove-item: "移除商品"
+      view-history: "查看他人的已购"
+      remove-history: "移除他人的已购"

@@ -1,0 +1,55 @@
+ziven-dice-game:
+  forum:
+    dice-game: 掷骰子
+    confirm: 确认
+    cancel: 取消
+    close: 关闭
+    challenge-game: 挑战游戏
+    challenged-game:  已参与
+    challenge-game-result: 游戏结果
+    challenge-game-result-win: 挑战胜利
+    challenge-game-result-win-info: 你获得了{money}
+    challenge-game-result-lose: 挑战失败
+    challenge-game-result-lose-info: 你失去了{money}
+    challenge-game-result-draw: 平局
+    challenge-game-result-draw-info: ""
+    start-game: 创建游戏
+    start-game-success: 创建游戏成功
+    start-game-info: "你拥有：{money} 最低分值：{wager}"
+    start-game-max-challenge: "* 最大局数为{quantity}局"
+    challenge-game-info: "你拥有：{money} 挑战游戏将花费：{wager}"
+    challenge-game-info-insufficient-fund: 抱歉，您的资金不足无法参与游戏
+    return-game-list: 返回游戏列表
+    game-ended: 此局游戏已结束
+    game-played: 您已参与过此游戏
+    host-wager: 下注金额
+    challenge-quantity: 局数
+    recent-result: 最近战果
+    win-count: 胜利次数：
+    defeat-count: 失败次数：
+    money-count: 分值：
+    item-id: ID：
+    item-game-id: 游戏ID：
+    item-host: 创建者：
+    item-wager: 分值：
+    item-createAt: 创建时间：
+    item-challenge-createAt: 挑战时间：
+    item-dice: 骰子点数：
+    item-defeat: 击败次数：
+    item-settlement: 结算分值：
+    item-challenged-users: 挑战者名单
+    load-more: 读取更多
+    list-empty: 这里空空如也
+    notification-ziven-dice-game: 骰子游戏结算通知
+    notification-game-content: 掷骰子游戏结算
+    notification-game-excerpt: ID：{gameID}｜局数：{challengeCount}｜击败挑战者次数：{defeatCount}｜结算分数：{balance}
+    filter-item-recent-game: 我的游戏
+    filter-item-recent-result: 我的挑战
+    save-error: 保存错误
+    save-error-insufficent-fund: 您的分值不足
+  admin:
+    settings:
+      maxChallengeCount: 最高挑战次数
+      minChallengeWager: 最低初始分值
+    permission:
+      allow-dice-game: 允许玩掷骰子游戏

@@ -1,0 +1,98 @@
+ziven-guaguale:
+  forum:
+    guaguale-purchase-input-placeholder: 请输入要购买的数量
+    guaguale-purchase-soldout: 抱歉，当前商品已售光
+    guaguale-purchase-cancel: 取消
+    guaguale-purchase-ok: 确定
+    guaguale-purchase-now: 立刻购买
+    guaguale-purchase-view-result: 查看结果
+    guaguale-purchase-scratch: 立刻刮开
+    guaguale-purchase-summary: "总共花费：{purchaseCostTotal} | 总共赢取：{purchaseWinTotal}"
+    guaguale-purchase-confirm: 购买
+    guaguale-purchase-success: 购买成功
+    guaguale-purchase-history: 刮刮乐购买历史
+    guaguale-purchase-money: 需要支付：
+    guaguale-purchase-limit: "购买上限：{limit}张"
+    guaguale-purchase-limit-none: "购买上限: 无"
+    guaguale-purchase-exceed-limit: "购买失败：超过购买上限"
+    guaguale-purchase-count: "已购买: {count}张"
+    guaguale-purchase-not-scratch-yet: 还未刮开
+    guaguale-current-money-amount: 当前拥有：
+    guaguale-available-amount: "剩余数量：{count}张"
+    guaguale-purchase: 购买刮刮乐
+    guaguale-unit-name: 张
+    guaguale-display-name-default: 刮刮乐
+    guaguale-list-item-cost: "价格：{cost}/张"
+    guaguale-list-item-available: "剩余：{available}张"
+    guaguale-list-item-soldout: "剩余：已售光"
+    guaguale-list-item-soldout-text: 已售光
+    guaguale-list-empty: 这里空空如也
+    guaguale-history-list-empty: 没有找到购买记录
+    guaguale-history-list-load-more: 读取更多
+    guaguale-history-list-id: ID
+    guaguale-history-list-title: 刮刮乐名称
+    guaguale-history-list-cost: 花费
+    guaguale-history-list-count: 数量
+    guaguale-history-list-assign-at: 购买时间
+    guaguale-history-list-open-result: 中奖结果
+    guaguale-scratch-it: 刮一刮
+    guaguale-scratch-result: "开奖结果：获得 {money}"
+    guaguale-close: 关闭
+    guaguale-receive-open-result: 刮开了刮刮乐
+    guaguale-purchased-user: "{purchaseUserName}购买了{purchaseCount}张并刮出{purchaseWinTotal}"
+    guaguale-open-error: 刮刮乐开奖错误
+    guaguale-open-error-already-opened: 刮刮乐已经开过了
+    guaguale-view-history: 查看购买历史
+    guaguale-purchased-user-empty: 还没有用户开奖
+    purchase-error: 购买时出现错误
+    purchase-error-insufficient-fund: 您的资金不足
+    purchase-error-not-enough-tickets: 剩余的刮刮乐数量不足
+    notifications:
+      guaguale-open-content: "【{guagualeTitle}】{guagualePurchaseCount}张 刮奖结果"
+      guaguale-win-total: "您花费了{costTotal}，开出了{winTotal} |  刮刮乐购买ID: {purchaseID}"
+  admin:
+    guaguale-allow-guaguale: 允许使用刮刮乐
+    guaguale-unit-name: 张
+    guaguale-add: 添加刮刮乐
+    guaguale-add-error: 添加错误
+    guaguale-edit: 编辑刮刮乐
+    guaguale-data-save: 保存
+    guaguale-data-confirm: 确定
+    guaguale-data-cancel: 取消
+    guaguale-data-add: 添加
+    guaguale-data-update: 更新
+    guaguale-data-remove: 删除
+    guaguale-data-not-enough-tickets: 剩余的刮刮乐数量不足
+    guaguale-data-win-price-already-exist: 中奖金额已存在
+    guaguale-data-win-price: 金额
+    guaguale-data-win-amount: 数量
+    guaguale-data-win-chance: "（中奖几率{winChance}%）"
+    guaguale-data-setting-invalid: 输入的数值不正确
+    settings:
+      guaguale-timezone: 时区设置
+      guaguale-timezone-help: 设置时区。默认为 "Asia/Shanghai"
+      guaguale-timezone-default: Asia/Shanghai
+      guaguale-display-name: 名称
+      guaguale-display-name-default: 刮刮乐
+      guaguale-item-edit: 编辑
+      guaguale-item-delete: 删除
+      guaguale-item-delete-confirmation: 你确定要删除吗?
+      guaguale-item-id: ID
+      guaguale-item-title: 标题
+      guaguale-item-status: 状态
+      guaguale-item-activated: 已激活
+      guaguale-item-deactivated: 未激活
+      guaguale-item-desc: 描述
+      guaguale-item-amount: 发行数量
+      guaguale-item-limit: 购买上限
+      guaguale-item-limit-desc: 用户购买上限（0代表无限制）
+      guaguale-item-unlimited: 无限制
+      guaguale-item-purchased: 已售出
+      guaguale-item-settings: 中奖设置
+      guaguale-item-cost: 花费/张
+      guaguale-item-background: 背景
+      guaguale-item-background-placeholder:  "请输入背景图片URL地址。例如：http://www.abc.com/example.png"
+      guaguale-item-color:  颜色
+      guaguale-item-color-placeholder: "请输入背景颜色代码。例如：#999999"
+      guaguale-item-color-background:  背景颜色/背景图片 (选填，留空则使用随机颜色)
+      guaguale-unit-name: 张

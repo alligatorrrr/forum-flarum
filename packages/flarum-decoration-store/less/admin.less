@@ -1,0 +1,406 @@
+.DecorationStore-loadMore {
+  text-align: center;
+}
+
+.decorationItemSettingContainer {
+  border: 1px dotted var(--control-color);
+  padding: 10px;
+  border-radius: var(--border-radius);
+}
+
+.decorationItemProperty {
+  padding-top: 5px;
+}
+
+.decorationItemProperty b{
+  color:var(--primary-color);
+}
+
+.decorationItemAvatarImage {
+  height:100px;
+  float:right;
+}
+
+.decorationItemUsernameColorStyle {
+  height:100px;
+  float:right;
+  font-size:20px;
+  margin-right: 10px;
+}
+
+.decorationItemProfileBackgroundImage{
+  width:170px;
+  height:80px;
+  float:right;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: var(--border-radius);
+}
+
+.decorationStoreSettingsLabel{
+  text-align: left;
+  padding: 10px 0px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.DecorationStoreModalBody {
+  @media @desktop-up {
+    padding: 25px 30px !important;
+  }
+  @media @tablet {
+    padding: 25px 30px !important;
+  }
+  @media @phone {
+    padding: 15px 20px !important;
+  }
+}
+
+.DecorationStoreSelectionList{
+  font-size:12px;
+}
+
+.DecorationStoreFiltersFlexCard {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.DecorationStoreFiltersCardsListItem.DecorationStoreFiltersCard {
+    @media @desktop-up {
+      height: 30px;
+    }
+    @media @tablet {
+      height: 30px;
+    }
+    @media @phone {
+      height: 40px;
+    }
+    margin-right: 20px;
+}
+
+.DecorationStoreItemButtonsFlexCard {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.DecorationStoreItemButtonsCardsListItem.DecorationStoreItemButtonsCard {
+    @media @desktop-up {
+      height: 50px;
+    }
+    @media @tablet {
+      height: 50px;
+    }
+    @media @phone {
+      height: 45px;
+    }
+}
+
+.DecorationGalleryListFlexCard {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.DecorationGalleryListCardsListItem.DecorationGalleryListCard {
+  @media @desktop-up {
+    width: 32.8%;
+  }
+  @media @tablet {
+    width: 32.8%;
+  }
+  @media @phone {
+    width: 49.4%;
+  }
+  height: 154px;
+}
+
+.DecorationGalleryListCardAdjust{
+    margin-left:4px;
+}
+
+.DecorationGalleryItemAvatarImage{
+  height:80px;
+}
+
+.DecorationGalleryItemImage{
+  cursor: pointer;
+  margin-top: -30px;
+}
+
+.DecorationGalleryItemImageLabel{
+  position: absolute;
+  bottom: 8px;
+  padding: 2px 8px;
+  font-size: 12px;
+}
+
+.DecorationGalleryItemStyle{
+  cursor: pointer;
+  line-height: 3;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+}
+
+.DecorationGalleryItemStyleLabel{
+  position: absolute;
+  bottom: 8px;
+  padding: 2px 8px;
+  font-size: 12px;
+}
+
+.DecorationGalleryItemProfileBackgroundImage{
+  width: 128px;
+  height: 60px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: var(--border-radius);
+  margin-top: 8px;
+}
+
+.DecorationGalleryContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px dotted var(--control-color);
+  padding: 10px;
+  border-radius: var(--border-radius);
+  min-height: 150px;
+  position:relative;
+}
+
+#itemImageContainer{
+  border-radius: var(--border-radius);
+}
+
+.decorationButton--gray {background-color:#ddd;color:var(--button-color);padding-left:20px;padding-right:20px;}
+.decorationButton--gray:focus {background-color:#ddd;color:var(--button-color)}
+.decorationButton--gray:hover {background-color:#c6c6c6;}
+.decorationButton--gray:active {background-color:#c6c6c6;}
+.decorationButton--gray:disabled {background-color:#eee;}
+
+.decorationButton--green {background-color:#b4f1af;color:#33722d;padding-left:20px;padding-right:20px;}
+.decorationButton--green:focus {background-color:#b4f1af;color:#33722d}
+.decorationButton--green:hover {background-color:#a0ed99;}
+.decorationButton--green:active {background-color:#8be984;}
+.decorationButton--green:disabled {background-color:#b4f1af;}
+
+.decorationButton--yellow {background-color:#fbbc04;color:#fff;padding-left:20px;padding-right:20px;}
+.decorationButton--yellow:focus {background-color:#fbbc04;color:#fff}
+.decorationButton--yellow:hover {background-color:#e2a904;}
+.decorationButton--yellow:active {background-color:#c99603;}
+.decorationButton--yellow:disabled {background-color:#fbbc04;}
+
+
+
+/* ---------------------- */
+/*     Text Effects       */
+/* ---------------------- */
+
+
+.decorationStoreColorText1 {
+    background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: decorationStoreColorText1Animation 6s ease-in-out infinite;
+    background-size: 400% 100%;
+}
+
+@keyframes decorationStoreColorText1Animation {
+    0%,100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
+}
+
+/* ---------------------- */
+/* ---------------------- */
+
+.decorationStoreColorText2{
+  background-image: linear-gradient(
+    -225deg,
+    #333604 0%,
+    #be9049 29%,
+    #ff8a13 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: decorationStoreColorText2Animation 2s linear infinite;
+  display: inline-block;
+}
+
+@keyframes decorationStoreColorText2Animation {
+  to {
+    background-position: 200% center;
+  }
+}
+
+/* ---------------------- */
+/* ---------------------- */
+.decorationStoreColorText3 {
+  background: linear-gradient(219deg,
+    #186cb8 19%,
+    transparent 19%,transparent 20%,
+    #2a9a9f 20%, #2a9a9f 39%,
+    transparent 39%,transparent 40%,
+    #f1b211 40%,#f1b211 59% ,
+    transparent 59%,transparent 60%,
+    #e83611 60%, #e83611 79%,
+    transparent 79%, transparent 80%,
+    #f9002f 80%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* ---------------------- */
+/* ---------------------- */
+
+.decorationStoreColorText4 { 
+ color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: fadeInEffect 4s ease-in infinite;
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+
+  @keyframes fadeInEffect {
+    from { color: transparent; }
+    to { color: #87c38f; } /* 绿色 */
+    
+}
+.decorationStoreColorText5 {color: transparent;
+  background: linear-gradient(45deg, #cdb4db, #ffafcc, #a2d2ff);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: elegantTextGlow 4s ease-in-out infinite;
+  text-shadow: 1px 1px 2px #cdb4db;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+@keyframes elegantTextGlow {
+  0%, 100% {
+    background-position: 0 0;
+    text-shadow: 1px 1px 2px #cdb4db;
+  }
+  50% {
+    background-position: 100% 0;
+    text-shadow: 1px 1px 2px #a2d2ff;
+  }}
+.decorationStoreColorText6 { color: transparent;
+  background: linear-gradient(to right, #ff0000, #0000ff); /* 从红色到蓝色的渐变 */
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: textGlow 6s ease-in-out infinite;
+}
+
+@keyframes textGlow {
+  0% {
+    background-position: 0 0;
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.7); /* 红色阴影 */
+  }
+  50% {
+    background-position: 100% 0;
+    text-shadow: 0 0 20px rgba(0, 0, 255, 1); /* 蓝色阴影 */
+  }
+  100% {
+    background-position: 200% 0;
+    text-shadow: 0 0 30px rgba(255, 0, 0, 1); /* 更亮的红色阴影 */
+  }}
+.decorationStoreColorText7 {color: green;}
+.decorationStoreColorText8 {color: darkcyan;}
+.decorationStoreColorText9 {color: blue;}
+.decorationStoreColorText10 {color: purple;}
+.decorationStoreColorText11 {color: pink;}
+.decorationStoreColorText12 {color: lightskyblue;}
+.decorationStoreColorText13 {
+  color: #4a7729; /* 淡绿色文字，让人想到新芽和嫩叶 */
+  text-shadow:
+    1px 1px 0px #e0f7da, /* 非常浅的绿色阴影，提亮效果 */
+    2px 2px 5px #fbdff2, /* 柔和的橙粉色阴影，温暖如春日阳光 */
+    -1px -1px 2px #fcebfc; /* 淡黄色阴影，给人以阳光照耀的感觉 */
+}
+.decorationStoreColorText14 { 
+  color: transparent;
+  background: linear-gradient(45deg, #87c38f, #619b8a, #38a3a5);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: smoothFlashEffect 8s ease-in-out infinite;
+  text-shadow: 1px 1px 2px #87c38f;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+@keyframes smoothFlashEffect {
+  0%, 10% { color: #fff; } /* 开始时完全透明 */
+  20%, 40% { color: #87c38f; }    /* 渐渐显现蓝绿色 */
+  50%, 100% {                     /* 蓝绿色渐变闪烁效果 */
+    background-position: 0 0;
+    color: #38a3a5;
+  }
+}
+.decorationStoreColorText15 {
+  color: transparent;
+  background: linear-gradient(45deg, #cdb4db, #ffafcc, #a2d2ff);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: elegantTextGlow 4s ease-in-out infinite;
+  text-shadow: 1px 1px 2px #cdb4db;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+@keyframes elegantTextGlow {
+  0%, 100% {
+    background-position: 0 0;
+    text-shadow: 1px 1px 2px #cdb4db;
+  }
+  50% {
+    background-position: 100% 0;
+    text-shadow: 1px 1px 2px #a2d2ff;
+  }
+}
+
+.decorationStoreColorText16 {
+  color: transparent;
+  background: linear-gradient(to right, #ff0000, #0000ff); /* 从红色到蓝色的渐变 */
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: textGlow 6s ease-in-out infinite;
+}
+
+@keyframes textGlow {
+  0% {
+    background-position: 0 0;
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.7); /* 红色阴影 */
+  }
+  50% {
+    background-position: 100% 0;
+    text-shadow: 0 0 20px rgba(0, 0, 255, 1); /* 蓝色阴影 */
+  }
+  100% {
+    background-position: 200% 0;
+    text-shadow: 0 0 30px rgba(255, 0, 0, 1); /* 更亮的红色阴影 */
+  }
+}
+

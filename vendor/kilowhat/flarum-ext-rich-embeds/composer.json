@@ -1,0 +1,51 @@
+{
+    "name": "kilowhat/flarum-ext-rich-embeds",
+    "description": "Rich Embeds in Flarum posts",
+    "keywords": [
+        "flarum"
+    ],
+    "type": "flarum-extension",
+    "license": "proprietary",
+    "require": {
+        "enshrined/svg-sanitize": "^0.15",
+        "flarum/core": "^1.2",
+        "flarum/bbcode": "*",
+        "google/apiclient": "^2.0",
+        "guzzlehttp/guzzle": "^7.0",
+        "intervention/image": "^2.0",
+        "ext-json": "*",
+        "ext-dom": "*",
+        "ext-libxml": "*"
+    },
+    "authors": [
+        {
+            "name": "Clark Winkelmann",
+            "homepage": "https://kilowhat.net/",
+            "email": "clark.winkelmann@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "docs": "https://kilowhat.net/flarum/extensions/rich-embeds",
+        "forum": "https://discuss.flarum.org/d/30516"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kilowhat\\RichEmbeds\\": "src/"
+        }
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "Rich Embeds",
+            "category": "feature",
+            "icon": {
+                "name": "far fa-caret-square-right",
+                "backgroundColor": "#e06b28",
+                "color": "#fff"
+            }
+        },
+        "flagrow": {
+            "discuss": "https://discuss.flarum.org/d/30516"
+        }
+    }
+}

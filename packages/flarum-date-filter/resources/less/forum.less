@@ -1,0 +1,28 @@
+@import (inline) "flatpickr.min.css";
+.IndexPage-toolbar-view>li{
+  margin-right:2px !important;
+}
+.Date-Filter-Form-group {
+  margin-bottom: 10px;
+
+  .DateFilterModal--button {
+    flex-shrink: 1;
+    margin-left: 10px;
+
+    .Button--color(@muted-color; darken(@control-bg, 5%));
+  }
+
+  .FilterModal--date {
+    display: flex;
+
+    input {
+      flex-grow: 1;
+    }
+  }
+}
+#Date-Filter-Dated{
+  background:var(--primary-color);
+  color:var(--button-primary-color);
+}
+.IndexPage-toolbar{display:flow-root;}
+

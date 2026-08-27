@@ -1,0 +1,47 @@
+{
+    "name": "nearata/flarum-ext-cakeday",
+    "description": "Show a birthday cake emoji beside the names of members on their join anniversary.",
+    "keywords": [
+        "flarum"
+    ],
+    "type": "flarum-extension",
+    "license": "Unlicense",
+    "support": {
+        "issues": "https://github.com/Nearata/flarum-ext-signup-cakeday/issues",
+        "source": "https://github.com/Nearata/flarum-ext-signup-cakeday",
+        "forum": "https://discuss.flarum.org/d/26590"
+    },
+    "require": {
+        "php": "^8.0",
+        "flarum/core": "^1.8"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.5.0"
+    },
+    "authors": [
+        {
+            "name": "Nearata",
+            "email": "nearata@protonmail.com",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Nearata\\CakeDay\\": "src/"
+        }
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "Cakeday",
+            "category": "feature",
+            "icon": {
+                "name": "fas fa-birthday-cake",
+                "backgroundColor": "#FFD449",
+                "color": "#fff"
+            }
+        }
+    },
+    "scripts": {
+        "format": "pint src"
+    }
+}

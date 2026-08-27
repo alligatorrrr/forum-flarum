@@ -1,0 +1,31 @@
+span.auto-badge {
+  padding: 4px 8px 4px 8px;
+  border-radius: 6px;
+  background: #ffffff;
+  margin-left: 8px;
+  margin-right: 8px;
+  border: 1px solid #cad0db;
+  i.fas,
+  i.fab {
+    color: @primary-color;
+    font-size: 15px;
+    margin-right: 5px;
+  }
+}
+body when (@config-dark-mode = true) {
+  span.auto-badge {
+    padding: 4px 8px 4px 8px;
+    border-radius: 6px;
+    background: #14191f !important;
+    margin-left: 8px;
+    margin-right: 8px;
+    color: #ffffff;
+    border: 1px solid #252a31;
+    i.fas,
+    i.fab {
+      color: #fff;
+      font-size: 15px;
+      margin-right: 5px;
+    }
+  }
+}
